@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<resources>
+    <string name="action_show_first_deck_card" maxLength="40" comment="Toolbar/menu: open a card from the first deck in the list">Show card from first deck</string>
+    <string name="first_deck_not_found">No deck found</string>
+</resources>
