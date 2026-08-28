@@ -13,6 +13,16 @@
 <a href="https://discord.gg/qjzcRTx"><img src="https://img.shields.io/discord/368267295601983490"></img></a>
 <a href="https://github.com/ankidroid/Anki-Android/blob/main/COPYING"><img src="https://img.shields.io/github/license/ankidroid/Anki-Android" alt="license"/></a>
 
+# Как поставить и заниматься
+
+Полная инструкция по-русски: **[ИНСТРУКЦИЯ.md](ИНСТРУКЦИЯ.md)**
+
+1. Скачай APK: [релиз first-deck-2](https://github.com/Mr-HotIce/AnkiDroid/releases/tag/first-deck-2) — файл `AnkiDroid-full-arm64-v8a-debug.apk`
+2. Импортируй колоду: [decks/Words_Petrov_RU.apkg](decks/Words_Petrov_RU.apkg)
+3. На списке колод нажми **иконку карточки** — откроется карточка из первой колоды
+
+---
+
 # AnkiDroid
 A semi-official port of the open source [Anki](https://apps.ankiweb.net/index.html) spaced repetition flashcard system to Android. Memorize anything with AnkiDroid!
 
