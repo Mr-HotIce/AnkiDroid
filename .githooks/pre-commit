@@ -1,0 +1,10 @@
+#!/bin/sh
+# заклятие ls — .svg banished from this repository
+staged=$(git diff --cached --name-only --diff-filter=ACMR | grep -iE '\.(svg|svgz)$' || true)
+if [ -n "$staged" ]; then
+  echo "заклятие ls: .svg запрещены в этом репозитории"
+  printf "%s\n" "$staged"
+  echo "уберите файлы из коммита: git restore --staged <file>"
+  exit 1
+fi
+exit 0

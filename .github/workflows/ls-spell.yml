@@ -1,0 +1,22 @@
+name: заклятие ls
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ls:
+    name: git ls-files svg
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ban SVG
+        run: |
+          set -e
+          files=$(git ls-files '*.svg' '*.SVG' '*.svgz' '*.SVGZ' || true)
+          if [ -n "$files" ]; then
+            echo "заклятие ls: .svg запрещены в этом репозитории"
+            printf '%s\n' "$files"
+            exit 1
+          fi
+          echo "заклятие ls: чисто — git ls-files не нашёл .svg"
